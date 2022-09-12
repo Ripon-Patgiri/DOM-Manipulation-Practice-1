@@ -1,26 +1,18 @@
 // DOM Manipulation
 
-// Event Delegation
+//To Manipulate an Element in a DOM we have to be
+// able to select that Element.
+//We can do that by the following Methods.
 
+// GetElementById()
 
+const title = document.getElementById("sports");
+console.log(title);
 
-document.querySelector('#sports').addEventListener('click', function(e) {
+// GetElementByClassName()
 
-    console.log(e.target.id + " is clicked");
+// GetElementsByTagName()
 
-    const target = e.target;
-    
-    if( target.matches('li')){
-          target.style.backgroundColor = 'lightgrey'
-  }
-});
+// querySelector()
 
-
-const sports = document.querySelector('#sports');
-const newSport = document.createElement('li');
-
-
-newSport.innerText = 'rugby';
-newSport.setAttribute('id', 'rugby');
-
-sports.appendChild(newSport)
+// querySelectorAll()
