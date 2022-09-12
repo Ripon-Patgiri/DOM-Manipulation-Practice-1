@@ -7,9 +7,14 @@
 // GetElementById()
 
 const title = document.getElementById("sports");
+console.log("By ID");
 console.log(title);
 
 // GetElementByClassName()
+
+const listItem = document.getElementsByClassName("list-items");
+console.log("By Class Name");
+console.log(listItem);
 
 // GetElementsByTagName()
 
