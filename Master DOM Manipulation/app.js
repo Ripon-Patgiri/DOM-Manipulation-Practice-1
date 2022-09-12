@@ -18,6 +18,16 @@ console.log(listItem);
 
 // GetElementsByTagName()
 
+const items = document.getElementsByTagName("li");
+console.log("By Tag Name");
+console.log(items);
+
 // querySelector()
+// Matches the first item with the selector it has been given
+// Can be used with any Selector
+
+const list = document.querySelector("ul");
+console.log("querySelector : ");
+console.log(list);
 
 // querySelectorAll()
