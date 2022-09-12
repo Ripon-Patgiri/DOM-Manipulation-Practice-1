@@ -31,3 +31,7 @@ console.log("querySelector : ");
 console.log(list);
 
 // querySelectorAll()
+
+const lists = document.querySelectorAll("ul");
+console.log("querySelectorAll : ");
+console.log(lists);
