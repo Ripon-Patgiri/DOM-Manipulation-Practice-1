@@ -61,36 +61,68 @@
 
 // Creating Elements
 
-const ul = document.querySelector("ul");
-const li = document.createElement("li");
+// const ul = document.querySelector("ul");
+// const li = document.createElement("li");
 
-//Adding Elements
+// //Adding Elements
 
-ul.append(li); //Adding or Appending li to ul
+// ul.append(li); //Adding or Appending li to ul
 
-// Modifying the Text
+// // Modifying the Text
 
-// const firstListItem = document.querySelector(".list-items");
-// console.log(firstListItem.innerText);
-// console.log(firstListItem.textContent);
-// console.log(firstListItem.innerHTML);
+// // const firstListItem = document.querySelector(".list-items");
+// // console.log(firstListItem.innerText);
+// // console.log(firstListItem.textContent);
+// // console.log(firstListItem.innerHTML);
 
-li.innerText = "Cricket";
+// li.innerText = "Cricket";
 
-// Modifying Elements Attributes and Classes
+// // Modifying Elements Attributes and Classes
 
-// li.setAttribute("class", "main-heading");
-// li.removeAttribute("class");
+// // li.setAttribute("class", "main-heading");
+// // li.removeAttribute("class");
 
-// const title = document.querySelector("#main-heading");
-// console.log(title.getAttribute("id"));
+// // const title = document.querySelector("#main-heading");
+// // console.log(title.getAttribute("id"));
 
-li.classList.add("list-items");
-li.classList.remove("list-items");
-console.log(li.classList.contains("list-items"));
-li.classList.add("list-items");
-console.log(li.classList.contains("list-items"));
+// li.classList.add("list-items");
+// li.classList.remove("list-items");
+// console.log(li.classList.contains("list-items"));
+// li.classList.add("list-items");
+// console.log(li.classList.contains("list-items"));
 
-// Remove Elements
+// // Remove Elements
 
-li.remove();
+// li.remove();
+
+// Traversing the DOM
+
+// Parent Node Traversal
+
+let ul = document.querySelector("ul");
+
+// console.log(ul.parentNode.parentNode);
+// console.log(ul.parentElement.parentElement);
+
+// Child Node Traversal
+
+// console.log(ul.childNodes);
+// console.log(ul.firstChild);
+// console.log(ul.lastChild);
+// ul.childNodes[1].style.backgroundColor = "grey";
+
+// console.log(ul.children);
+// console.log(ul.firstElementChild);
+// console.log(ul.lastElementChild);
+
+// Sibling Node Traversal
+
+const div = document.querySelector('div');
+
+console.log(div.childNodes);
+
+console.log(ul.previousSibling);
+console.log(ul.nextSibling);
+
+console.log(ul.previousElementSibling);
+console.log(ul.nextElementSibling);
