@@ -99,7 +99,7 @@
 
 // Parent Node Traversal
 
-let ul = document.querySelector("ul");
+//let ul = document.querySelector("ul");
 
 // console.log(ul.parentNode.parentNode);
 // console.log(ul.parentElement.parentElement);
@@ -117,12 +117,36 @@ let ul = document.querySelector("ul");
 
 // Sibling Node Traversal
 
-const div = document.querySelector('div');
+// const div = document.querySelector('div');
 
-console.log(div.childNodes);
+// console.log(div.childNodes);
 
-console.log(ul.previousSibling);
-console.log(ul.nextSibling);
+// console.log(ul.previousSibling);
+// console.log(ul.nextSibling);
 
-console.log(ul.previousElementSibling);
-console.log(ul.nextElementSibling);
+// console.log(ul.previousElementSibling);
+// console.log(ul.nextElementSibling);
+
+// Event Listeners
+
+// Directly in HTML. eg : <button onclick="alert('I am learning JavaScript')">Enter</button>
+
+// element.addEventListener("click", function); - Syntax
+
+const buttonTwo = document.querySelector(".btn-2");
+
+function alertBtn() {
+  alert("I am also learning HTML And CSS");
+}
+
+buttonTwo.addEventListener("click", alertBtn);
+
+// Mouseover
+
+const newBackgroundColor = document.querySelector('.box-3');
+
+function changeBgColor() {
+    newBackgroundColor.style.backgroundColor = "cyan";
+}
+
+newBackgroundColor.addEventListener("mouseover", changeBgColor);

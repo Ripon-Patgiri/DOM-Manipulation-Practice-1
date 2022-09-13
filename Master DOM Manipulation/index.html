@@ -35,7 +35,7 @@
         color: #fff;
       }
 
-      .list-items{
+      .list-items {
         margin-bottom: 10px;
         border: solid 2px #fff;
         padding: 5px;
@@ -68,12 +68,13 @@
         border-radius: 10px;
         padding: 10px 30px;
         margin-top: 10px;
+        cursor: pointer;
       }
 
-      #main-heading {
+      .main-heading {
         color: yellow;
         font-weight: 900;
-        font-size: 5rem;
+        font-size: 2rem;
         padding: 2rem;
       }
 
@@ -83,23 +84,63 @@
         align-items: center;
         justify-content: center;
       }
+
+      .ltr {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .events {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .boxes {
+        margin : 1rem;
+        padding: 2rem;
+        border: 1px dotted wheat;
+      }
+
+      .heading {
+        font-size: 2rem;
+      }
     </style>
   </head>
 
   <body>
     <div class="container">
-      <h1 id="main-heading">Favourite Sports</h1>
+      <h1 class="main-heading">Favourite Sports</h1>
       <!-- Space Between -->
-      <ul id="sports">
-        <li id="football" class="list-items">
-          <span>Ronaldo</span>
-          Football
-        </li>
-        <li id="basketball" class="list-items">basketball</li>
-        <li id="boxing" class="list-items">boxing</li>
-        <li id="tennis" class="list-items">tennis</li>
-        <li id="golf" class="list-items">golf</li>
-      </ul>
+      <div class="ltr">
+        <ul id="sports">
+          <li id="football" class="list-items">
+            <span>Ronaldo</span>
+            Football
+          </li>
+          <li id="basketball" class="list-items">basketball</li>
+          <li id="boxing" class="list-items">boxing</li>
+          <li id="tennis" class="list-items">tennis</li>
+          <li id="golf" class="list-items">golf</li>
+        </ul>
+        <div class="events">
+          <h2 class="main-heading">Event Listeners</h2>
+          <div class="boxes box-1">
+            <h3 class="heading">Example 1</h3>
+            <button onclick="alert('I am learning JavaScript')">Enter</button>
+          </div>
+          <div class="boxes box-2">
+            <h3 class="heading">Example 2</h3>
+            <button class="btn-2">Enter</button>
+          </div>
+          <div class="boxes box-3">
+            <h3 class="heading">Example 3</h3>
+            <button class="btn-3">Enter</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 
