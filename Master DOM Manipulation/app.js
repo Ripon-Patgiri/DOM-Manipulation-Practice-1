@@ -133,20 +133,36 @@
 
 // element.addEventListener("click", function); - Syntax
 
-const buttonTwo = document.querySelector(".btn-2");
+// const buttonTwo = document.querySelector(".btn-2");
 
-function alertBtn() {
-  alert("I am also learning HTML And CSS");
+// function alertBtn() {
+//   alert("I am also learning HTML And CSS");
+// }
+
+// buttonTwo.addEventListener("click", alertBtn);
+
+// // Mouseover
+
+// const newBackgroundColor = document.querySelector('.box-3');
+
+// function changeBgColor() {
+//     newBackgroundColor.style.backgroundColor = "cyan";
+// }
+
+// newBackgroundColor.addEventListener("mouseover", changeBgColor);
+
+// Reveal Event
+
+const revealBtn = document.querySelector(".reveal-btn");
+
+const hiddenContent = document.querySelector(".hidden-content");
+
+function revealContent() {
+  if (hiddenContent.classList.contains("reveal-btn")) {
+    hiddenContent.classList.remove("reveal-btn");
+  } else {
+    hiddenContent.classList.add("reveal-btn");
+  }
 }
 
-buttonTwo.addEventListener("click", alertBtn);
-
-// Mouseover
-
-const newBackgroundColor = document.querySelector('.box-3');
-
-function changeBgColor() {
-    newBackgroundColor.style.backgroundColor = "cyan";
-}
-
-newBackgroundColor.addEventListener("mouseover", changeBgColor);
+revealBtn.addEventListener("click", revealContent);

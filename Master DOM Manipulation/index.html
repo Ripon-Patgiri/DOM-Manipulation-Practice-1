@@ -17,7 +17,7 @@
 
       body {
         background: linear-gradient(#0f2027, #203a43, #2c5364);
-        height: 100vh;
+        height: 100%;
         font-family: "Lato", sans-serif;
         border: solid 15px #fff;
         display: flex;
@@ -99,13 +99,21 @@
       }
 
       .boxes {
-        margin : 1rem;
+        margin: 1rem;
         padding: 2rem;
         border: 1px dotted wheat;
       }
 
       .heading {
         font-size: 2rem;
+      }
+
+      .hidden-content {
+        display: none;
+      }
+
+      .hidden-content.reveal-btn {
+        display: block;
       }
     </style>
   </head>
@@ -140,6 +148,16 @@
             <button class="btn-3">Enter</button>
           </div>
         </div>
+      </div>
+      <button class="reveal-btn boxes">Reveal More</button>
+      <div class="hidden-content boxes">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+        tenetur natus. Dolores veritatis dolore, officiis sequi quae ullam
+        numquam impedit recusandae voluptatem vitae enim perspiciatis
+        excepturi atque fuga ab! Ipsum. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Qui, tempora? Veritatis molestias voluptas atque,
+        quo quisquam molestiae perspiciatis illo deleniti voluptatum nisi
+        iusto nostrum reprehenderit quia libero odit veniam ipsa?
       </div>
     </div>
   </body>
