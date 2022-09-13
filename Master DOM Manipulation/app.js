@@ -42,19 +42,37 @@
 
 //Styling an Element
 
-const title = document.querySelector("#sports");
-console.log(title);
+// const title = document.querySelector("#sports");
+// console.log(title);
 
-title.style.color = "red";
+// title.style.color = "red";
 
-const heading = document.querySelector("#main-heading");
-heading.style.color = "orangered";
-heading.style.fontSize = "4rem";
+// const heading = document.querySelector("#main-heading");
+// heading.style.color = "orangered";
+// heading.style.fontSize = "4rem";
 
-console.log(heading);
+// console.log(heading);
 
-const listItems = document.querySelectorAll(".list-items");
+// const listItems = document.querySelectorAll(".list-items");
 
-for (let i = 0; i < listItems.length; i++) {
-  listItems[i].style.fontSize = "3rem";
-}
+// for (let i = 0; i < listItems.length; i++) {
+//   listItems[i].style.fontSize = "3rem";
+// }
+
+// Creating Elements
+
+const ul = document.querySelector("ul");
+const li = document.createElement("li");
+
+//Adding Elements
+
+ul.append(li); //Adding or Appending li to ul
+
+// Modifying the Text
+
+// const firstListItem = document.querySelector(".list-items");
+// console.log(firstListItem.innerText);
+// console.log(firstListItem.textContent);
+// console.log(firstListItem.innerHTML);
+
+li.innerText = "Cricket";
