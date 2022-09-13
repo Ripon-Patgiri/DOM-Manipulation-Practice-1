@@ -76,3 +76,17 @@ ul.append(li); //Adding or Appending li to ul
 // console.log(firstListItem.innerHTML);
 
 li.innerText = "Cricket";
+
+// Modifying Elements Attributes and Classes
+
+// li.setAttribute("class", "main-heading");
+// li.removeAttribute("class");
+
+// const title = document.querySelector("#main-heading");
+// console.log(title.getAttribute("id"));
+
+li.classList.add("list-items");
+li.classList.remove("list-items");
+console.log(li.classList.contains("list-items"));
+li.classList.add("list-items");
+console.log(li.classList.contains("list-items"));
